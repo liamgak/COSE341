@@ -1,0 +1,37 @@
+<시스템 콜을 호출하는 어플리케이션 실행결과>
+SGH@OS2019:~$ ./myapp2
+Push: 1
+Push: 2
+Push: 3
+Pop: 3
+Pop: 2
+Pop: 1
+
+<dmseg 실행결과>
+[  276.429983] [System call] oslab_push(): Push 1
+[  276.429984] Stack Top ----------
+[  276.429985] 1
+[  276.429985] Stack Bottom -------
+[  276.430054] [System call] oslab_push(): Push 2
+[  276.430054] Stack Top ----------
+[  276.430055] 2
+[  276.430055] 1
+[  276.430055] Stack Bottom -------
+[  276.430058] [System call] oslab_push(): Push 3
+[  276.430059] Stack Top ----------
+[  276.430059] 3
+[  276.430059] 2
+[  276.430060] 1
+[  276.430060] Stack Bottom -------
+[  276.430198] [System call] oslab_pop(): Pop 3
+[  276.430199] Stack Top ----------
+[  276.430199] 2
+[  276.430200] 1
+[  276.430201] Stack Bottom -------
+[  276.430295] [System call] oslab_pop(): Pop 2
+[  276.430296] Stack Top ----------
+[  276.430296] 1
+[  276.430297] Stack Bottom -------
+[  276.430399] [System call] oslab_pop(): Pop 1
+[  276.430400] Stack Top ----------
+[  276.430401] Stack Bottom -------
